@@ -5,21 +5,21 @@
 class Opengyver < Formula
   desc "Swiss-army-knife CLI for everyday conversions — images, units, currencies, documents, time, and more"
   homepage "https://github.com/create-flow-ai/openGyver"
-  version "0.1.2"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/create-flow-ai/openGyver/releases/download/v0.1.2/openGyver_darwin_amd64.tar.gz"
-      sha256 "f71e467cc5c7c1b4f990ca82c03e21dea042644ae60006b9fed08ef954de0428"
+      url "https://github.com/create-flow-ai/openGyver/releases/download/v1.0.0/openGyver_darwin_amd64.tar.gz"
+      sha256 "d44bef1d8a6bdc34baab47853bc4cf947ba5f79d9a1b0c849ca3e1dd86d5aaad"
 
       define_method(:install) do
         bin.install "openGyver"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/create-flow-ai/openGyver/releases/download/v0.1.2/openGyver_darwin_arm64.tar.gz"
-      sha256 "78990bf5ab09ef6fa348eca037b0e27b44c18c47cd346a75e5393b8cfc6d106b"
+      url "https://github.com/create-flow-ai/openGyver/releases/download/v1.0.0/openGyver_darwin_arm64.tar.gz"
+      sha256 "3dd8e94bb8e1199d40441090ae54216ea9408f5a0fcedf98a93af200f270e29c"
 
       define_method(:install) do
         bin.install "openGyver"
@@ -29,15 +29,15 @@ class Opengyver < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/create-flow-ai/openGyver/releases/download/v0.1.2/openGyver_linux_amd64.tar.gz"
-      sha256 "82ff020d49ebdb505d16f9b801bfaaaba7c5c1b1d16f9a1e265026622c32353c"
+      url "https://github.com/create-flow-ai/openGyver/releases/download/v1.0.0/openGyver_linux_amd64.tar.gz"
+      sha256 "aaf662c226a202b5d4f7048ac35bf254b8cb76748084e6a0bf03d0b78a002e87"
       define_method(:install) do
         bin.install "openGyver"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/create-flow-ai/openGyver/releases/download/v0.1.2/openGyver_linux_arm64.tar.gz"
-      sha256 "c0ac152be21e931fcbaffecf6d31338b6b25b815a1a208f1deae66a445bb5fdd"
+      url "https://github.com/create-flow-ai/openGyver/releases/download/v1.0.0/openGyver_linux_arm64.tar.gz"
+      sha256 "5401f3a5865f09fc8d016ae99bf44b018687f7229db2c921fe36feed779d215b"
       define_method(:install) do
         bin.install "openGyver"
       end
